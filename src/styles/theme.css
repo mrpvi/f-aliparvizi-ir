@@ -1,0 +1,36 @@
+@theme {
+    --color-transparent: transparent;
+    --color-current: currentColor;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+/* Font utilities */
+.font-lato {
+  font-family: var(--font-lato);
+}
+
+.font-bitcount {
+  font-family: var(--font-bitcount);
+}
+
+/* Font weight utilities for Lato */
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
