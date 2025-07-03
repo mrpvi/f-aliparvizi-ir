@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
 import Header from "@/components/shared/organisms/Header";
+import Footer from "@/components/shared/organisms/Footer";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className={`${lato.variable} ${bitcountGridDouble.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
