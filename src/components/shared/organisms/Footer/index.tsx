@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
         <div className="flex items-center gap-4 order-2 md:order-1">
           {links.map(link => (
-            <a
+            <a 
               key={link.label}
               href={link.href}
               target="_blank"
