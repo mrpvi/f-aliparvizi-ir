@@ -1,8 +1,8 @@
 @theme {
-    --color-transparent: transparent;
-    --color-current: currentColor;
-    --color-black: #000000;
-    --color-white: #ffffff;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-black: #000000;
+  --color-white: #ffffff;
 }
 
 /* Font utilities */

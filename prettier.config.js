@@ -1,6 +1,6 @@
 const config = {
   semi: true,
-  trailingComma: 'es5',
+  trailingComma: "es5",
   singleQuote: false,
   printWidth: 80,
   tabWidth: 2,
@@ -8,4 +8,4 @@ const config = {
   bracketSpacing: true,
 };
 
-module.exports = config; 
+module.exports = config;

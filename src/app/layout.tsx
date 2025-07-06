@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} ${bitcountGridDouble.variable} antialiased`}>
+      <body
+        className={`${lato.variable} ${bitcountGridDouble.variable} antialiased`}
+      >
         <Header />
         {children}
         <Footer />
