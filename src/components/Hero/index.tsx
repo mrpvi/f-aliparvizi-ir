@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="bg-gray-100 py-12">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-8">
+      <div className="container mx-auto px-4 md:px-0 flex flex-col items-center justify-center gap-8">
         <Image
           src="/images/profile.webp"
           alt="Hero"

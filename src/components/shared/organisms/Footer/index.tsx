@@ -1,6 +1,6 @@
 const links = [
   {
-    href: "https://github.com/aliparvizi",
+    href: "https://github.com/mrpvi",
     label: "GitHub",
     svg: (
       <svg
@@ -19,7 +19,7 @@ const links = [
     ),
   },
   {
-    href: "https://linkedin.com/in/aliparvizi",
+    href: "https://linkedin.com/in/ali-parvizi",
     label: "LinkedIn",
     svg: (
       <svg
@@ -38,7 +38,7 @@ const links = [
     ),
   },
   {
-    href: "https://medium.com/@aliparvizi",
+    href: "https://medium.com/@aliparvizidev",
     label: "Medium",
     svg: (
       <svg
