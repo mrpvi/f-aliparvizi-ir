@@ -72,6 +72,8 @@ const eslintConfig = [
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
       "prettier/prettier": "error",
+      "@typescript-eslint/no-explicit-any": "off",
+      "prefer-spread": "off",
     },
     settings: {
       react: {

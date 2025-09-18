@@ -72,11 +72,13 @@ All MJML components are mobile-responsive out of the box:
 ## Getting Started
 
 1. **Installation**
+
    ```bash
    npm install mjml
    ```
 
 2. **Create your first template**
+
    ```xml
    <mjml>
      <mj-body>

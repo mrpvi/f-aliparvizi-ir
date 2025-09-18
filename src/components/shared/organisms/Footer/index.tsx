@@ -1,11 +1,13 @@
+import ContainerCard from "@/components/ContainerCard";
+
 const links = [
   {
     href: "https://github.com/mrpvi",
     label: "GitHub",
     svg: (
       <svg
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         fill="none"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -23,8 +25,8 @@ const links = [
     label: "LinkedIn",
     svg: (
       <svg
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         fill="none"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -42,8 +44,8 @@ const links = [
     label: "Medium",
     svg: (
       <svg
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         fill="none"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -59,9 +61,10 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white border-t border-gray-200 shadow-sm mt-12">
-      <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
-        <div className="flex items-center gap-4 order-2 md:order-1">
+    <footer>
+      <ContainerCard className="flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-8">
+        {/* Social Links */}
+        <div className="flex items-center gap-1 order-2 md:order-1">
           {links.map((link) => (
             <a
               key={link.label}
@@ -69,20 +72,23 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="bg-gray-100 hover:bg-blue-500 text-gray-500 hover:text-white rounded-full p-2 transition-colors shadow-sm"
+              className="text-white rounded-full p-2.5"
             >
               {link.svg}
             </a>
           ))}
         </div>
-        <div className="hidden md:block h-8 w-px bg-gray-200 mx-8 order-3"></div>
-        <div className="flex flex-col items-center order-1 md:order-2 w-full md:w-auto">
-          <span className="text-gray-600 text-sm font-medium">
+
+        {/* Divider */}
+        <div className="hidden md:block h-6 w-px bg-gray-300 order-3"></div>
+
+        {/* Copyright */}
+        <div className="flex flex-col items-start order-1 md:order-2 text-start">
+          <span className="text-gray-50 text-sm font-medium">
             Rights Reserved © Aliparvizi.ir 2025
           </span>
-          <span className="block w-24 h-1 bg-blue-500 rounded mt-2"></span>
         </div>
-      </div>
+      </ContainerCard>
     </footer>
   );
 }
