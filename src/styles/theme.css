@@ -3,6 +3,12 @@
   --color-current: currentColor;
   --color-black: #000000;
   --color-white: #ffffff;
+
+  --color-gray-50: #8a8a8a;
+  --color-gray-100: #373737;
+  --color-gray-200: #2c2c2c;
+  --color-gray-300: #212121;
+  --color-gray-400: #161616;
 }
 
 /* Font utilities */

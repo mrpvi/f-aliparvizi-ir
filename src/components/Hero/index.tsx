@@ -1,34 +1,48 @@
 import Image from "next/image";
+import ContainerCard from "@/components/ContainerCard";
 
 export default function Hero() {
   return (
-    <section className="bg-gray-100 py-12">
-      <div className="container mx-auto px-4 md:px-0 flex flex-col items-center justify-center gap-8">
-        <Image
-          src="/images/profile.webp"
-          alt="Hero"
-          width={150}
-          height={150}
-          className="rounded-full shadow-lg border-4 border-white"
-        />
-        <div className="flex flex-col items-center gap-3">
-          <h1 className="text-4xl font-bold text-center relative">
-            Ali Parvizi
-            <span className="block w-16 h-1 bg-blue-500 mx-auto mt-2 rounded"></span>
-          </h1>
-          <p className="text-xl text-center text-gray-700 max-w-2xl leading-relaxed">
-            I&apos;m a software engineer with a knack for building frontend
-            applications and a passion for helping others. I enjoy tackling
-            complex problems and crafting solutions that keep things running
-            smoothly. In my free time, I contribute to open-source projects to
-            support the community and grow my skills.
-            <span className="font-bold me-2">So why not?</span>
-            <span className="font-bold text-blue-500">
-              Let&apos;s learn a little together.
-            </span>
-          </p>
+    <section>
+      <ContainerCard className="rounded-b-none">
+        <div className="flex items-center justify-between">
+          <h2 className="text-gray-50 flex items-center gap-2">
+            <div className="w-1.5 h-1.5 bg-gray-50 rounded"></div>
+            Software Engineer
+          </h2>
+
+          <div className="relative p-1 px-2 rounded-full text-[12px]">
+            <div className="absolute inset-0 bg-green-500 opacity-50 rounded-full"></div>
+            <div className="relative z-10 text-white text-nowrap">
+              Available for New Opportunities
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div className="mt-12 flex items-center justify-between gap-8">
+          <div className="flex flex-col items-start justify-center gap-4">
+            <h1 className="text-4xl font-bold text-center relative text-white">
+              I&apos;m Ali Parvizi
+            </h1>
+            <p className="text-gray-50">
+              I&apos;m a software engineer with a knack for building{" "}
+              <b className="text-[#c5c5c5]">Front-end</b> applications and a
+              passion for helping others. I enjoy tackling complex problems and
+              crafting solutions that keep things running smoothly. In my free
+              time, I contribute to open source projects to support the
+              community and grow my skills.
+            </p>
+          </div>
+
+          <Image
+            src="/images/profile.webp"
+            alt="Ali Parvizi"
+            width={150}
+            height={150}
+            className="rounded-full shadow-lg border-4 border-white"
+          />
+        </div>
+      </ContainerCard>
     </section>
   );
 }
